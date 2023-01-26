@@ -1,0 +1,41 @@
+.row {
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.task {
+  font-weight: normal;
+  color: #323338;
+  opacity: 0.7;
+  text-align: left;
+  font-size: 1.28571429em;
+}
+
+.task.disabled {
+  text-decoration: line-through;
+}
+
+.column.one.wide > svg {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.column.fourteen.wide.divider {
+  border-bottom: 0.75px solid #490093;
+  padding: 0;
+}
+
+.column.fourteen.wide.divider:first-child {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .column.eleven.wide {
+    max-width: 65%;
+  }
+  .task {
+    font-size: 1 rem;
+  }
+  .column.one.wide > svg {
+    font-size: 1.2rem;
+  }
+}

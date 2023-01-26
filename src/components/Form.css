@@ -1,0 +1,39 @@
+.plus-icon {
+  rotate: 90deg;
+  font-size: 3rem;
+}
+
+.ui.form,
+.ui.form > .ui.grid.center.aligned {
+  width: 100%;
+  margin: 0;
+}
+.ui.form {
+  width: 600px;
+}
+
+.ui.form > .ui.grid.center.aligned > .row {
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background: #fafbfd;
+  border-radius: 4.5px;
+}
+
+.ui.form input[type="text"] {
+  border: none !important;
+}
+
+.ui.form > .ui.grid.center.aligned > .row > .column.three.wide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+@media (max-width: 576px) {
+  .ui.form {
+    width: 97%;
+  }
+
+}

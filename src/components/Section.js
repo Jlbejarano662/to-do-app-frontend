@@ -1,7 +1,9 @@
 import React from "react";
+//import styles
+import "./Section.css"
 
 const Section = ({ children }) => {
-  return <div style={{ margin: "50px" }}>{children}</div>;
+  return <div className="section">{children}</div>;
 };
 
 export default Section;

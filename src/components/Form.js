@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+//import icons
+import { BsFillFilePlusFill } from "react-icons/bs";
+//import styles
+import "./Form.css";
 
 const Form = ({ addTodo }) => {
   const [inputValue, setInputValue] = useState("");
@@ -20,19 +24,22 @@ const Form = ({ addTodo }) => {
     <form className="ui form" onSubmit={handleFormSubmit}>
       <div className="ui grid center aligned">
         <div className="row">
-          <div className="column five wide">
+          <div className="column thirteen wide">
             <input
               value={inputValue}
               onChange={handleInputChange}
               type="text"
-              placeholder="Enter something to do..."
+              placeholder="Ingresar tarea..."
+              className="input-task"
             />
           </div>
 
-          <div className="column one wide">
-            <button type="submit" className="ui button circular icon green">
-              <i className="white plus icon"></i>
-            </button>
+          <div className="column three wide">
+            <BsFillFilePlusFill
+              fill="#490093"
+              className="plus-icon"
+              onClick={handleFormSubmit}
+            />
           </div>
         </div>
       </div>
